@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function kmstomilesfunc(){
+            alert("Button is Clicked");
+            //var res = Kms * 0.62137 ;
+            var s = document.getElementById('Kms').value;
+            var Miles = s * 0.62137 ;
+            console.log(Miles);
+            document.getElementById('text').innerText ="Miles value is" +Miles ;
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <form>
+        <h1>Km to Miles</h1>
+        <input type="number" id="Kms"  placeholder="Enter the value in Kms : " />
+        <input type="button" onclick="kmstomilesfunc()" value="Convert" />
+        <h1>Result :</h1>
+        <h1 id="text" ></h1>
+
+    </form>
+
+</body>
+</html>
